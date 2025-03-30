@@ -73,6 +73,9 @@ float *part_a(char* filename){
     
     // create the array of data
     static float arr[] = {probLegend, avgHeight, avgWeight, avgEncounterProb, avgCatchProb};
+
+    infile.close();
+
     return arr;
 }
 
@@ -137,6 +140,9 @@ float *part_b(char* filename){
 
     // make the array
     static float arr[] = {probLegend, avgHeight, avgWeight, avgEncounterProb, avgCatchProb};
+
+    infile.close();
+
     return arr;
 }
 
@@ -228,6 +234,8 @@ float part_c(char* filename, int ntrials=5000){
         }
     
     }
+
+    infile.close();
 
     // return the average number of encounters required to encounter each pokemon
     return (float) totalEncounters/ntrials;
@@ -336,6 +344,8 @@ float part_d(char* filename, int ntrials=5000){
             }
         }
     }
+
+    infile.close();
 
     // return the average number of encounters before you encounter and catch all the pokemon
     return (float) totalEncounters/ntrials;
