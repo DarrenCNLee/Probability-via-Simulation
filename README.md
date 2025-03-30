@@ -33,7 +33,7 @@ pokemon.cpp
     for simulating the numbers of encounters for part c and d
 
     Part d function generates a random number from 0 to 1 with rand() every time 
-    a Pokemone is encountered to try to catch it even if the Pokemon has already been
+    a Pokemon is encountered to try to catch it even if the Pokemon has already been
     caught before
 
     Main function prints out the results of part a through d
